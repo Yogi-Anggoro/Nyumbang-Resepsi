@@ -1,0 +1,4 @@
+package com.example.bukutamusumbanganresepsi.fitur.kembalikansumbangan.daftarkembalianonly
+
+interface DaftarKembalianOnlyContract {
+}

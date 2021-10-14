@@ -1,18 +1,351 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:orientation="vertical"
+    android:background="@color/mainbg"
+    tools:context=".fitur.main.MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+   <com.google.android.material.floatingactionbutton.FloatingActionButton
+       android:id="@+id/btn_info_akun"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:backgroundTint="@color/white"
+       android:layout_margin="20dp"
+       android:src="@drawable/ic_me"/>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+   <com.google.android.material.floatingactionbutton.FloatingActionButton
+       android:id="@+id/btn_about"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:backgroundTint="@color/white"
+       android:layout_alignParentRight="true"
+       android:layout_margin="20dp"
+       android:src="@drawable/ic_baseline_info_24"/>
+
+   <ImageView
+       android:layout_width="match_parent"
+       android:layout_height="300dp"
+       android:background="@color/blue"/>
+
+   <LinearLayout
+       android:orientation="vertical"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="0dp"
+          android:layout_weight="1"
+          android:gravity="center"
+          android:orientation="vertical">
+
+         <TextView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:fontFamily="serif"
+             android:text="Aplikasi Buku Tamu"
+             android:textSize="30sp"
+             android:textStyle="bold"/>
+
+         <TextView
+             android:id="@+id/dalam_rangka"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:fontFamily="serif"
+             android:text="Pernikahan"
+             android:textSize="17sp"/>
+
+         <TextView
+             android:id="@+id/orangnya"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:fontFamily="serif"
+             android:text="ninda dan ardan"
+             android:textSize="17sp"/>
+
+      </LinearLayout>
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:orientation="horizontal"
+          android:layout_height="0dp"
+          android:layout_weight="2">
+
+         <GridLayout
+             android:id="@+id/mainGrid"
+             android:rowCount="3"
+             android:columnCount="2"
+             android:alignmentMode="alignMargins"
+             android:columnOrderPreserved="false"
+             android:layout_weight="8"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:padding="14dp">
+
+            <!-- ROW 1  -->
+            <!-- COLUMN 1  -->
+
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/crd_tambah_tamu"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_columnWeight="1"
+                android:layout_marginBottom="16dp"
+                android:layout_rowWeight="1"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                app:cardElevation="8dp"
+                app:cardCornerRadius="8dp"
+                app:cardBackgroundColor="@color/white">
+
+               <LinearLayout
+                   android:layout_gravity="center_horizontal|center_vertical"
+                   android:layout_margin="16dp"
+                   android:orientation="vertical"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content">
+
+                  <ImageView
+                      android:layout_gravity="center_horizontal"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:src="@drawable/ic_baseline_person_add_alt_1_24" />
+
+                  <TextView
+                      android:textAlignment="center"
+                      android:text="Tambah      Tamu"
+                      android:textColor="#000"
+                      android:textSize="18sp"
+                      android:textStyle="bold"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content" />
+
+               </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <!-- COLUMN 2  -->
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/crd_kembalikan_sumbangan"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_columnWeight="1"
+                android:layout_marginBottom="16dp"
+                android:layout_rowWeight="1"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                app:cardElevation="8dp"
+                app:cardCornerRadius="8dp"
+                app:cardBackgroundColor="@color/white">
+
+               <LinearLayout
+                   android:layout_gravity="center_horizontal|center_vertical"
+                   android:layout_margin="16dp"
+                   android:orientation="vertical"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content">
+
+                  <ImageView
+                      android:layout_gravity="center_horizontal"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:src="@drawable/ic_baseline_kembalis"/>
+
+                  <TextView
+                      android:textAlignment="center"
+                      android:text="Kembalikan Sumbangan"
+                      android:textColor="#000"
+                      android:textSize="18sp"
+                      android:textStyle="bold"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content" />
+
+               </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+
+            <!-- ROW 2  -->
+            <!-- COLUMN 1  -->
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/crd_jadwal_nyumbang"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_columnWeight="1"
+                android:layout_marginBottom="16dp"
+                android:layout_rowWeight="1"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                app:cardElevation="8dp"
+                app:cardCornerRadius="8dp"
+                app:cardBackgroundColor="@color/white">
+
+               <LinearLayout
+                   android:layout_gravity="center_horizontal|center_vertical"
+                   android:layout_margin="16dp"
+                   android:orientation="vertical"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content">
+
+                  <ImageView
+                      android:layout_gravity="center_horizontal"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:src="@drawable/ic_baseline_jadwal"/>
+
+                  <TextView
+                      android:textAlignment="center"
+                      android:text="Jadwal   Nyumbang"
+                      android:textColor="#000"
+                      android:textSize="18sp"
+                      android:textStyle="bold"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content" />
+
+               </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <!-- COLUMN 2  -->
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/crd_pengeluaran"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_columnWeight="1"
+                android:layout_marginBottom="16dp"
+                android:layout_rowWeight="1"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                app:cardElevation="8dp"
+                app:cardCornerRadius="8dp"
+                app:cardBackgroundColor="@color/white">
+
+               <LinearLayout
+                   android:layout_gravity="center_horizontal|center_vertical"
+                   android:layout_margin="16dp"
+                   android:orientation="vertical"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content">
+
+                  <ImageView
+                      android:layout_gravity="center_horizontal"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:src="@drawable/ic_pengluar"/>
+
+                  <TextView
+                      android:textAlignment="center"
+                      android:text="Catatan Pengeluaran"
+                      android:textColor="#000"
+                      android:textSize="18sp"
+                      android:textStyle="bold"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content" />
+
+               </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <!-- ROW 3  -->
+            <!-- COLUMN 1  -->
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/crd_rekap"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_columnWeight="1"
+                android:layout_marginBottom="16dp"
+                android:layout_rowWeight="1"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                app:cardElevation="8dp"
+                app:cardCornerRadius="8dp"
+                app:cardBackgroundColor="@color/white">
+
+               <LinearLayout
+                   android:layout_gravity="center_horizontal|center_vertical"
+                   android:layout_margin="16dp"
+                   android:orientation="vertical"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content">
+
+                  <ImageView
+                      android:layout_gravity="center_horizontal"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:src="@drawable/ic_laporan"/>
+
+                  <TextView
+                      android:textAlignment="center"
+                      android:text="Rekap Data"
+                      android:textColor="#000"
+                      android:textSize="18sp"
+                      android:textStyle="bold"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content" />
+
+               </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <!-- COLUMN 2  -->
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/crd_exit"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_columnWeight="1"
+                android:layout_marginBottom="16dp"
+                android:layout_rowWeight="1"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                app:cardElevation="8dp"
+                app:cardCornerRadius="8dp"
+                app:cardBackgroundColor="@color/white">
+
+               <LinearLayout
+                   android:layout_gravity="center_horizontal|center_vertical"
+                   android:layout_margin="16dp"
+                   android:orientation="vertical"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content">
+
+                  <ImageView
+                      android:layout_gravity="center_horizontal"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:src="@drawable/ic_exit"/>
+
+                  <TextView
+                      android:layout_gravity="center"
+                      android:textAlignment="center"
+                      android:text="Exit"
+                      android:textColor="#000"
+                      android:textSize="18sp"
+                      android:textStyle="bold"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content" />
+
+               </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+         </GridLayout>
+
+      </LinearLayout>
+
+
+   </LinearLayout>
+
+</RelativeLayout>

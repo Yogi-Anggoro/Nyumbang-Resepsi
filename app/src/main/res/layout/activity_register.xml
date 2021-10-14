@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fitur.register.RegisterActivity"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:gravity="center">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="REGISTER"
+        android:fontFamily="arial"
+        android:textColor="@color/black"
+        android:textSize="60sp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="5dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="*Alamat e-mail yang digunakan"
+        android:textColor="@color/black"
+        android:textStyle="italic"/>
+    <EditText
+        android:id="@+id/et_email_register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:padding="15dp"
+        android:textColor="@color/black"
+        android:drawableStart="@drawable/ic_email"
+        android:hint="bukutamu@mail.co.id"
+        android:textColorHint="@color/black"
+        android:background="@drawable/bg_edt"
+        android:inputType="textEmailAddress"
+        android:drawablePadding="15dp"
+        android:drawableLeft="@drawable/ic_email" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="*Password"
+        android:textColor="@color/black"
+        android:textStyle="italic"/>
+    <EditText
+        android:id="@+id/et_password_register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:padding="15dp"
+        android:textColor="@color/black"
+        android:drawableStart="@drawable/ic_lock"
+        android:hint="Masukan Password"
+        android:textColorHint="@color/black"
+        android:background="@drawable/bg_edt"
+        android:inputType="textPassword"
+        android:drawablePadding="15dp"
+        android:drawableLeft="@drawable/ic_email"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="*Dalam acara Resepsi"
+        android:textColor="@color/black"
+        android:textStyle="italic"/>
+    <EditText
+        android:id="@+id/et_event_register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:padding="15dp"
+        android:textColor="@color/black"
+        android:drawableStart="@drawable/ic_event"
+        android:hint="Pernikahan / Syukuran "
+        android:textColorHint="@color/black"
+        android:background="@drawable/bg_edt"
+        android:inputType="text"
+        android:drawablePadding="15dp"
+        android:drawableLeft="@drawable/ic_event"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="*Nama"
+        android:textColor="@color/black"
+        android:textStyle="italic"/>
+    <EditText
+        android:id="@+id/et_nama_register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:padding="15dp"
+        android:textColor="@color/black"
+        android:drawableStart="@drawable/ic_person"
+        android:hint="Andre dan Nina"
+        android:textColorHint="@color/black"
+        android:background="@drawable/bg_edt"
+        android:inputType="text"
+        android:drawablePadding="15dp"
+        android:drawableLeft="@drawable/ic_person"
+        />
+    <Button
+        android:id="@+id/btn_register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_button"
+        android:padding="10dp"
+        android:layout_margin="10dp"
+        android:text="Register"
+        android:textStyle="bold"
+        android:textSize="17sp"/>
+
+    <TextView
+        android:id="@+id/have_akun"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sudah punya akun? log in disini"
+        android:layout_gravity="center"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:layout_marginTop="5dp"
+        />
+
+
+</LinearLayout>

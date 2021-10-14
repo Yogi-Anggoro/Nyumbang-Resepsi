@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "250353057991",
+    "project_id": "bukutamuresepsi",
+    "storage_bucket": "bukutamuresepsi.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:250353057991:android:e03d63cd876a258db2bee2",
+        "android_client_info": {
+          "package_name": "com.example.bukutamusumbanganresepsi"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "250353057991-94kseop3bjh2c1r2jdls4abgtincdqlo.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.bukutamusumbanganresepsi",
+            "certificate_hash": "f8ee5716a150ca0507d4a88d65ff61059b269a07"
+          }
+        },
+        {
+          "client_id": "250353057991-ps6spjnk7u7ek1knqmsvulht85ni07lu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA6J3T3RrQ5fRmD9Z2HfYljgKYA1-Wa6C0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "250353057991-ps6spjnk7u7ek1knqmsvulht85ni07lu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

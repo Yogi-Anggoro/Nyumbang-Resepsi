@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:backgroundTint="@color/blue"
+    tools:context=".fitur.tamusumbangan.daftartamu.Daftar_Tamu_Activity">
+
+    <TextView
+        android:paddingTop="20dp"
+        android:paddingBottom="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textSize="25sp"
+        android:text="Daftar Tamu Sumbangan"
+        android:fontFamily="arial"
+        android:textColor="@color/white"/>
+    <EditText
+        android:id="@+id/et_cari_tamu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        android:textColor="@color/black"
+        android:drawableStart="@drawable/ic_cari"
+        android:hint="Cari Data"
+        android:textColorHint="@color/black"
+        android:background="@drawable/bg_edt"
+        android:inputType="text"
+        android:drawablePadding="10dp"
+        />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="560dp"
+        android:background="@color/blue">
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rcv_addtamu"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            />
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/btn_addtamu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_margin="20dp"
+            android:src="@drawable/ic_add_white"/>
+    </RelativeLayout>
+    <LinearLayout
+        android:background="@drawable/bg_pengeluaran_bawah"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content"
+            android:padding="3dp"
+            android:gravity="center">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Jumlah Tamu : "
+                android:textColor="@color/black"
+                android:paddingLeft="10dp"
+                />
+            <TextView
+                android:id="@+id/jumtam"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="50"
+                android:textColor="@color/black"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

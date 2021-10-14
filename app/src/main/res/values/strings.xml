@@ -1,3 +1,6 @@
 <resources>
     <string name="app_name">Buku Tamu Sumbangan Resepsi</string>
+    <string name="email">Email</string>
+    <string name="fill_data">Tidak Boleh Kosong</string>
+    <string name="fill_pasword">Password Minimal 6 Karakter</string>
 </resources>

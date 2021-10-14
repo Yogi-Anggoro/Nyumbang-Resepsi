@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/white"
+        android:gravity="center"
+        tools:context=".fitur.kembalikansumbangan.detailkembalikansumbangan.DetailKembalikanSumbanganActivity">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Form Tambah Kembalikan Sumbangan"
+            android:fontFamily="arial"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:textSize="30sp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="5dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="10dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Info Tamu"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="No           :  "
+                android:textStyle="bold"
+                android:textColor="@color/black"/>
+            <TextView
+                android:id="@+id/tv_nomo_ks_frm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="001"
+                android:textStyle="bold"
+                android:textColor="@color/black"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Nama     :  "
+                android:textStyle="bold"
+                android:textColor="@color/black"/>
+            <TextView
+                android:id="@+id/tv_Nama_ks_frm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Yogi Anggoro"
+                android:textStyle="bold"
+                android:textColor="@color/black"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Alamat   :  "
+                android:textStyle="bold"
+                android:textColor="@color/black"/>
+            <TextView
+                android:id="@+id/tv_alamat_ks_frm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Karya Sakti sp2 Blok A"
+                android:textStyle="bold"
+                android:textColor="@color/black"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ket           :  "
+                android:textStyle="bold"
+                android:textColor="@color/black"/>
+            <TextView
+                android:id="@+id/tv_keterangan_ks_frm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Yogi mantan kades"
+                android:textStyle="bold"
+                android:textColor="@color/black"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Jumlah Sumbangan  :  "
+                android:textStyle="bold"
+                android:textColor="@color/black"/>
+            <TextView
+                android:id="@+id/tv_jumlahsumbangan_ks_frm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="50.000"
+                android:textStyle="bold"
+                android:textColor="@color/black"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Status Sumbangan    :  "
+                android:textStyle="bold"
+                android:textColor="@color/black"/>
+            <TextView
+                android:id="@+id/tv_ststudsumbangan_ks"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Belum Dikembalikan"
+                android:textStyle="bold"
+                android:textColor="@color/black"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Pengembalian            :  "
+                android:textStyle="bold"
+                android:textColor="@color/black"/>
+            <TextView
+                android:id="@+id/tv_pengembalian_ks_frm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="55.000"
+                android:textStyle="bold"
+                android:textColor="@color/black"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="20dp"
+                android:text="Pengembalian Sumbangan"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="*Jumlah uang yang akan dikembalikan"
+                android:paddingTop="20dp"
+                android:textColor="@color/black"/>
+            <EditText
+                android:id="@+id/et_d_jumlah_sumbangan_frm"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:padding="15dp"
+                android:textColor="@color/black"
+                android:drawableStart="@drawable/ic_uang"
+                android:hint="300000"
+                android:textColorHint="@color/black"
+                android:background="@drawable/bg_edt"
+                android:inputType="number"
+                android:drawablePadding="15dp"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="*Catatan: Jika anda menekan tombol tambah, maka status sumbangan
+akan berubah menjadi telah dikembalikan dengan jumlah dana yang dikembalikan sesuai dengan inputan anda."
+                android:textStyle="italic"
+                android:textColor="@color/red"/>
+        </LinearLayout>
+    </LinearLayout>
+        <Button
+            android:id="@+id/btn_addkembalikan_sumbangan_frm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_button"
+            android:padding="10dp"
+            android:layout_margin="10dp"
+            android:text="Tambah"
+            android:textStyle="bold"
+            android:textSize="17sp"/>
+
+
+    </LinearLayout>
