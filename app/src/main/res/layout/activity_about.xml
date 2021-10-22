@@ -1,9 +1,48 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".fitur.about.AboutActivity">
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:background="@color/blue"
+    android:gravity="center"
+    tools:context=".fitur.infoakun.InfoAkunActivity">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:background="@color/blue">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="About Us"
+            android:gravity="center"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"/>
+
+        <TextView
+            android:justificationMode="inter_word"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Aplikasi Buku Tamu Sumbangan Resepsi, dibuat oleh Yogi Anggoro 17.12.0044. Dirancang khusus untuk anda yang menggunakan budaya nyumbang dan mengembalikan sumbangan pada acara resepsi. Aplikasi ini akan sangat membantu dalam hal pencarian data tamu untuk mengembalikan sumbangan. Aplikasi ini dilengkapi fitur untuk merekap pengeluaran dan pendapatan resepsi, serta dilengkapi dengan fitur jadwal nyumbang untuk membuat jadwal nyumbang anda."
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Copyright (c) Bukutamuresepsi 2021"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textColor="@color/white"/>
+    </LinearLayout>
+
+
+</LinearLayout>

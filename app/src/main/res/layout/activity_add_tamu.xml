@@ -13,6 +13,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:gravity="center"
         android:text="Tambah Tamu Sumbangan"
         android:fontFamily="arial"
         android:textColor="@color/black"
@@ -35,7 +36,7 @@
         android:textColor="@color/black"
         android:drawableStart="@drawable/ic_baseline_nomor"
         android:hint="1"
-        android:textColorHint="@color/black"
+        android:textColorHint="@color/oppacity"
         android:background="@drawable/bg_edt"
         android:inputType="number"
         android:drawablePadding="15dp"/>
@@ -55,7 +56,7 @@
         android:textColor="@color/black"
         android:drawableStart="@drawable/ic_person"
         android:hint="Yogi Anggoro"
-        android:textColorHint="@color/black"
+        android:textColorHint="@color/oppacity"
         android:background="@drawable/bg_edt"
         android:inputType="text"
         android:drawablePadding="15dp"
@@ -76,7 +77,7 @@
         android:textColor="@color/black"
         android:drawableStart="@drawable/ic_alamat"
         android:hint="Lubuk linggau (majapahit)"
-        android:textColorHint="@color/black"
+        android:textColorHint="@color/oppacity"
         android:background="@drawable/bg_edt"
         android:inputType="text"
         android:drawablePadding="15dp"
@@ -97,7 +98,7 @@
         android:textColor="@color/black"
         android:drawableStart="@drawable/ic_ket"
         android:hint="Yogi Mantan wali kota"
-        android:textColorHint="@color/black"
+        android:textColorHint="@color/oppacity"
         android:background="@drawable/bg_edt"
         android:inputType="text"
         android:drawablePadding="15dp"
@@ -118,7 +119,7 @@
         android:textColor="@color/black"
         android:drawableStart="@drawable/ic_uang"
         android:hint="300000"
-        android:textColorHint="@color/black"
+        android:textColorHint="@color/oppacity"
         android:background="@drawable/bg_edt"
         android:inputType="number"
         android:drawablePadding="15dp"
@@ -133,5 +134,13 @@
         android:text="Tambah"
         android:textStyle="bold"
         android:textSize="17sp"/>
+    <TextView
+        android:id="@+id/tv_getemailuser_addtamu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="userma_mail"
+        android:visibility="gone"
+        android:textColor="@color/black"
+        android:textStyle="italic"/>
 
 </LinearLayout>

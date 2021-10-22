@@ -39,6 +39,15 @@
                 android:textSize="20sp"
                 android:textStyle="bold"
                 android:textColor="@color/black"/>
+            <TextView
+                android:id="@+id/tv_usermail_kembalikan_Sumbangan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="usermail"
+                android:visibility="gone"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"/>
         </LinearLayout>
 
         <LinearLayout
@@ -178,7 +187,7 @@
                 android:layout_height="wrap_content"
                 android:text="55.000"
                 android:textStyle="bold"
-                android:textColor="@color/black"/>
+                android:textColor="@color/red"/>
         </LinearLayout>
 
         <LinearLayout
@@ -217,7 +226,7 @@
                 android:textColor="@color/black"
                 android:drawableStart="@drawable/ic_uang"
                 android:hint="300000"
-                android:textColorHint="@color/black"
+                android:textColorHint="@color/oppacity"
                 android:background="@drawable/bg_edt"
                 android:inputType="number"
                 android:drawablePadding="15dp"

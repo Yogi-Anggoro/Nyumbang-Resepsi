@@ -34,7 +34,7 @@ class Daftar_Pengeluaran_Activity : AppCompatActivity(),Daftar_Pengeluaran_Contr
         loading = showDialogLoading()
         presenter.getPengeluaran()
         presenter.getJumlah()
-        presenter.getJumlahSumbangan()
+        presenter.getJumlahPengeluaran()
         et_cari_Pengeluaran.addTextChangedListener(onSearchChange())
 
         btn_addpengeluaran.setOnClickListener {
@@ -98,7 +98,7 @@ class Daftar_Pengeluaran_Activity : AppCompatActivity(),Daftar_Pengeluaran_Contr
         }
     }
 
-    override fun onSuccess(pengeluaran: ArrayList<Pengeluaran>) {
+    override fun onSuccess(pengeluaran: ArrayList<Pengeluaran>?) {
         listPengeluaran = pengeluaran
         val onClickItem = object : PengeluaranAdapter.onClickItem {
             override fun onClickItem(data: Pengeluaran) {
@@ -118,7 +118,7 @@ class Daftar_Pengeluaran_Activity : AppCompatActivity(),Daftar_Pengeluaran_Contr
        jumdafpeng.text = jumlah.toString()
     }
 
-    override fun onSuccessJumlahSumbangan(jumlahs: Int) {
+    override fun onSuccessJumlahPengeluaran(jumlahs: Int) {
         jumpengpel.text = jumlahs.toString()
     }
 

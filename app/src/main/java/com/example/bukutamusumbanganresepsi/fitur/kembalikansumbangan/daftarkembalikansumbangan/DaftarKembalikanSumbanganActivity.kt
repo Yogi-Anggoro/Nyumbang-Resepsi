@@ -30,6 +30,7 @@ class DaftarKembalikanSumbanganActivity : AppCompatActivity(), DaftarKembalikanS
         DaftarKembalikanSumbanganPresenter(this,this)
         loading = showDialogLoading()
         presenter.getTamu()
+        presenter.getJumlah()
         et_cari_tamu_ks.addTextChangedListener(onSearchChange())
     }
 
@@ -101,6 +102,10 @@ class DaftarKembalikanSumbanganActivity : AppCompatActivity(), DaftarKembalikanS
         DKSAdapter= KembalikanSumbanganAdapter(tamu,this,onClickItem)
         rcv_kembalikansumbangan.adapter = DKSAdapter
         rcv_kembalikansumbangan.layoutManager = LinearLayoutManager(this,LinearLayoutManager.VERTICAL,false)
+    }
+
+    override fun onSuccessJumlah(jumlah: Int) {
+        jumpengsum.text = jumlah.toString()
     }
 
 

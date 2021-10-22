@@ -5,12 +5,12 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <androidx.cardview.widget.CardView
-        android:id="@+id/card_item_kembalikan"
+        android:id="@+id/card_item_daftar_jadwal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:backgroundTint="@color/white"
-        app:cardCornerRadius="20dp"
         android:layout_margin="5dp"
+        app:cardCornerRadius="20dp"
         android:padding="10dp">
 
         <LinearLayout
@@ -27,14 +27,14 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="No           :  "
+                    android:text="Acara     :  "
                     android:textStyle="bold"
                     android:textColor="@color/black"/>
                 <TextView
-                    android:id="@+id/tv_nomor_ks"
+                    android:id="@+id/tv_acara_daftar"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="001"
+                    android:text="Pernikahan"
                     android:textStyle="bold"
                     android:textColor="@color/black"/>
             </LinearLayout>
@@ -51,10 +51,10 @@
                     android:textStyle="bold"
                     android:textColor="@color/black"/>
                 <TextView
-                    android:id="@+id/tv_Nama_ks"
+                    android:id="@+id/tv_Nama_daftar"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Yogi Anggoro"
+                    android:text="Brian de lee"
                     android:textStyle="bold"
                     android:textColor="@color/black"/>
             </LinearLayout>
@@ -71,7 +71,7 @@
                     android:textStyle="bold"
                     android:textColor="@color/black"/>
                 <TextView
-                    android:id="@+id/tv_alamat_ks"
+                    android:id="@+id/tv_alamat_daftar"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Karya Sakti sp2 Blok A"
@@ -87,80 +87,19 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="ket           :  "
+                    android:text="Tanggal  : "
                     android:textStyle="bold"
                     android:textColor="@color/black"/>
                 <TextView
-                    android:id="@+id/tv_keterangan_ks"
+                    android:id="@+id/tv_tanggal_daftar"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Yogi mantan kades"
-                    android:textStyle="bold"
-                    android:textColor="@color/black"/>
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Jumlah Sumbangan  :  "
-                    android:textStyle="bold"
-                    android:textColor="@color/black"/>
-                <TextView
-                    android:id="@+id/tv_jumlahsumbangan_ks"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="50.000"
+                    android:text="12/12/2020"
                     android:textStyle="bold"
                     android:textColor="@color/black"/>
             </LinearLayout>
 
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Status Sumbangan    :  "
-                    android:textStyle="bold"
-                    android:textColor="@color/black"/>
-                <TextView
-                    android:id="@+id/tv_ststussumbangan_ks"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Belum Dikembalikan"
-                    android:textStyle="bold"
-                    android:textColor="@color/red"/>
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Pengembalian            :  "
-                    android:textStyle="bold"
-                    android:textColor="@color/black"/>
-                <TextView
-                    android:id="@+id/tv_pengembalian_ks"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="55.000"
-                    android:textStyle="bold"
-                    android:textColor="@color/black"/>
-            </LinearLayout>
         </LinearLayout>
-
-
 
     </androidx.cardview.widget.CardView>
 

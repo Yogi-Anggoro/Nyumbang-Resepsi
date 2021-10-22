@@ -59,28 +59,19 @@
             android:layout_height="wrap_content"
             android:padding="3dp"
             android:gravity="center">
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Jumlah sumbangan dikembalikan : "
-                android:textColor="@color/black"
                 android:paddingLeft="10dp"
-                />
+                android:text="Jumlah sumbangan dikembalikan : "
+                android:textColor="@color/black" />
             <TextView
                 android:id="@+id/jumpengsum"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="50"
+                android:text="0"
                 android:textColor="@color/black"/>
-            <Button
-                android:id="@+id/btn_addtamu"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@drawable/bg_button"
-                android:layout_margin="10dp"
-                android:text="Lihat"
-                android:textStyle="bold"
-                android:textSize="15sp"/>
         </LinearLayout>
 
     </LinearLayout>

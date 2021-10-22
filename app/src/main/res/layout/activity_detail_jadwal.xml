@@ -5,10 +5,11 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:layout_gravity="center"
     android:background="@color/blue"
     android:gravity="center"
-    tools:context=".fitur.infoakun.InfoAkunActivity">
+    tools:context=".fitur.tamusumbangan.tambahtamu.AddTamuActivity">
+
+
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -22,7 +23,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Info Pengguna"
+            android:text="Info Jadwal Sumbangan"
             android:gravity="center"
             android:textSize="20sp"
             android:textStyle="bold"
@@ -38,34 +39,14 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Alamat Email        :  "
+                android:text="Acara        : "
                 android:textStyle="bold"
                 android:textColor="@color/black"/>
             <TextView
-                android:id="@+id/tv_email_info"
+                android:id="@+id/tv_acara_jadwal_detail"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="bukutamu@mail.com"
-                android:textStyle="bold"
-                android:textColor="@color/black"/>
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:padding="2dp">
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Password              : "
-                android:textStyle="bold"
-                android:textColor="@color/black"/>
-            <TextView
-                android:id="@+id/tv_password_info"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="xxxxxx"
+                android:text="Pernikahan"
                 android:textStyle="bold"
                 android:textColor="@color/black"/>
         </LinearLayout>
@@ -78,14 +59,34 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Acara Resepsi      : "
+                android:text="Nama        : "
                 android:textStyle="bold"
                 android:textColor="@color/black"/>
             <TextView
-                android:id="@+id/tv_acara_info"
+                android:id="@+id/tv_nama_jadwal_detail"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Peresmian Pernikahan"
+                android:text="Brian de lee"
+                android:textStyle="bold"
+                android:textColor="@color/black"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="2dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Alamat      : "
+                android:textStyle="bold"
+                android:textColor="@color/black"/>
+            <TextView
+                android:id="@+id/tv_alamat_jadwal_detail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Pulau Panggung"
                 android:textStyle="bold"
                 android:textColor="@color/black"/>
         </LinearLayout>
@@ -99,27 +100,62 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Nama                      : "
+                android:text="Tanggal     : "
                 android:textStyle="bold"
                 android:textColor="@color/black"/>
             <TextView
-                android:id="@+id/tv_nama_info"
+                android:id="@+id/tv_tanggal_detail"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Anggara dan Gia"
+                android:text="12/12/2020"
                 android:textStyle="bold"
                 android:textColor="@color/black"/>
         </LinearLayout>
-        <Button
-            android:id="@+id/btn_kembali_main"
+        <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@drawable/bg_button"
-            android:padding="10dp"
-            android:layout_margin="10dp"
-            android:text="kembali"
-            android:textStyle="bold"
-            android:textSize="17sp"/>
+            android:text="Apakah Acara Telah Selesai ?"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textColor="@color/black"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:padding="2dp">
+
+            <Button
+                android:id="@+id/btn_selesai_daftar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_button_red"
+                android:padding="10dp"
+                android:layout_margin="10dp"
+                android:text="Ya"
+                android:textStyle="bold"
+                android:textSize="17sp"/>
+            <Button
+                android:id="@+id/btn_kembali_daftar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_button"
+                android:padding="10dp"
+                android:layout_margin="10dp"
+                android:text="tidak"
+                android:textStyle="bold"
+                android:textSize="17sp"/>
+
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="*Catatan: Jika anda menekan tombol YA, Maka jadwal sumbangan ini akan terhapus dari daftar jadwal Sumbangan Anda."
+            android:textStyle="italic"
+            android:textColor="@color/red"/>
+
     </LinearLayout>
+
+
 
 </LinearLayout>

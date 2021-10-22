@@ -29,6 +29,7 @@ class DetailKembalikanSumbanganActivity : AppCompatActivity(),DetailKembalikanSu
         btn_addkembalikan_sumbangan_frm.setOnClickListener {
             if (handleInput()) {
                 val tamu = Tamu(
+                        tv_usermail_kembalikan_Sumbangan.text.toString(),
                         tv_nomo_ks_frm.text.toString(),
                         tv_Nama_ks_frm.text.toString(),
                         tv_alamat_ks_frm.text.toString(),
@@ -57,10 +58,12 @@ class DetailKembalikanSumbanganActivity : AppCompatActivity(),DetailKembalikanSu
 
     override fun onSuccess(message: String) {
         Toast.makeText(this,message, Toast.LENGTH_SHORT).show()
+        finish()
     }
 
     override fun onGetData(tamu: Tamu, no: String?) {
         idTamu = no
+        tv_usermail_kembalikan_Sumbangan.setText(tamu.email_user)
         tv_nomo_ks_frm.setText(tamu.no)
         tv_Nama_ks_frm.setText(tamu.nama)
         tv_alamat_ks_frm.setText(tamu.alamat)

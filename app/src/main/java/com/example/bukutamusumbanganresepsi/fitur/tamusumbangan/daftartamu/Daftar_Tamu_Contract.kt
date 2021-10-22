@@ -10,9 +10,11 @@ interface Daftar_Tamu_Contract {
         fun onError (message: String)
         fun onSuccess (tamu: ArrayList<Tamu>)
         fun onProcess (boolean: Boolean)
+        fun onSuccessJumlah (jumlah: Int)
     }
 
     interface Presenter : BasePresenter {
         fun getTamu()
+        fun getJumlahTamu()
     }
 }

@@ -25,9 +25,11 @@ class AddTamuActivity : AppCompatActivity(), AddTamuContract.view {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_add_tamu)
         loading = showDialogLoading()
+        presenter.getUsermail()
         btn_addtamu.setOnClickListener {
             if (handleInput()){
                 val tamu = Tamu(
+                        tv_getemailuser_addtamu.text.toString(),
                         et_nomor_tamu.text.toString(),
                         et_nama_tamu.text.toString(),
                         et_alamat_tamu.text.toString(),
@@ -63,6 +65,10 @@ class AddTamuActivity : AppCompatActivity(), AddTamuContract.view {
             loading?.dismiss()
         }
 
+    }
+
+    override fun onSuccessMail(email: String) {
+        tv_getemailuser_addtamu.text = email
     }
 
     //isi loading

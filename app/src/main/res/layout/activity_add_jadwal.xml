@@ -4,39 +4,84 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/white"
     android:orientation="vertical"
+    android:background="@color/white"
     android:gravity="center"
-    tools:context=".fitur.pengeluaran.detailpengeluaran.DetailPengeluaranActivity">
+    tools:context=".fitur.tamusumbangan.tambahtamu.AddTamuActivity">
+
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Detail Pengeluaran"
+        android:gravity="center"
+        android:text="Tambah Jadwal Sumbangan"
         android:fontFamily="arial"
         android:textColor="@color/black"
         android:textSize="30sp"
         android:layout_gravity="center"
         android:layout_marginBottom="5dp"/>
 
+
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="*Nomor Pengeluaran"
+        android:text="*Acara"
         android:textColor="@color/black"
         android:textStyle="italic"/>
     <EditText
-        android:id="@+id/et_nomor_pengeluaran_detail"
+        android:id="@+id/et_acara_jadwal_add"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
         android:padding="15dp"
         android:textColor="@color/black"
-        android:drawableStart="@drawable/ic_baseline_nomor"
-        android:hint="1"
+        android:drawableStart="@drawable/ic_event"
+        android:hint="Pernikahan/Syukuran/dll"
         android:textColorHint="@color/oppacity"
         android:background="@drawable/bg_edt"
-        android:inputType="number"
+        android:inputType="text"
+        android:drawablePadding="15dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="*Nama"
+        android:textColor="@color/black"
+        android:textStyle="italic"/>
+    <EditText
+        android:id="@+id/et_nama_jadwal_add"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:padding="15dp"
+        android:textColor="@color/black"
+        android:drawableStart="@drawable/ic_person"
+        android:hint="Brian saputra"
+        android:textColorHint="@color/oppacity"
+        android:background="@drawable/bg_edt"
+        android:inputType="text"
+        android:drawablePadding="15dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="*Alamat"
+        android:textColor="@color/black"
+        android:textStyle="italic"/>
+    <EditText
+        android:id="@+id/et_alamat_jadwal_add"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:padding="15dp"
+        android:textColor="@color/black"
+        android:drawableStart="@drawable/ic_alamat"
+        android:hint="Lubuk linggau (majapahit)"
+        android:textColorHint="@color/oppacity"
+        android:background="@drawable/bg_edt"
+        android:inputType="text"
         android:drawablePadding="15dp"
         />
 
@@ -47,112 +92,36 @@
         android:textColor="@color/black"
         android:textStyle="italic"/>
     <EditText
-        android:id="@+id/et_tanggal_pengeluaran_detail"
+        android:id="@+id/et_tanggal_jadwal_add"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
         android:padding="15dp"
-        android:ems="10"
         android:textColor="@color/black"
         android:drawableStart="@drawable/ic_date"
-        android:hint="12/09/2020"
+        android:hint="12/12/2020"
         android:textColorHint="@color/oppacity"
         android:background="@drawable/bg_edt"
         android:inputType="date"
-        android:drawablePadding="15dp"/>
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="*Jumlah"
-        android:textColor="@color/black"
-        android:textStyle="italic"/>
-    <EditText
-        android:id="@+id/et_jumlah_pengeluaran_detail"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="10dp"
-        android:padding="15dp"
-        android:textColor="@color/black"
-        android:drawableStart="@drawable/ic_uang"
-        android:hint="1000000"
-        android:textColorHint="@color/oppacity"
-        android:background="@drawable/bg_edt"
-        android:inputType="number"
         android:drawablePadding="15dp"
         />
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="*Nama Pengeluaran"
-        android:textColor="@color/black"
-        android:textStyle="italic"/>
-    <EditText
-        android:id="@+id/et_nama_pengeluaran_detail"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="10dp"
-        android:padding="15dp"
-        android:textColor="@color/black"
-        android:drawableStart="@drawable/ic_nama"
-        android:hint="Sewa tenda"
-        android:textColorHint="@color/oppacity"
-        android:background="@drawable/bg_edt"
-        android:inputType="text"
-        android:drawablePadding="15dp"
-        />
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="*Keterangan"
-        android:textColor="@color/black"
-        android:textStyle="italic"/>
-    <EditText
-        android:id="@+id/et_keterangan_pengeluaran_detail"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="10dp"
-        android:padding="15dp"
-        android:textColor="@color/black"
-        android:drawableStart="@drawable/ic_ket"
-        android:hint="Sewa tenda sepaket"
-        android:textColorHint="@color/oppacity"
-        android:background="@drawable/bg_edt"
-        android:inputType="text"
-        android:drawablePadding="15dp"
-        />
-
     <Button
-        android:id="@+id/btn_updatepengeluaran"
+        android:id="@+id/btn_addjadwal_in"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@drawable/bg_button"
         android:padding="10dp"
         android:layout_margin="10dp"
-        android:text="Ubah"
-        android:textStyle="bold"
-        android:textSize="17sp"/>
-
-    <Button
-        android:id="@+id/btn_deletepengeluaran"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@drawable/bg_delete"
-        android:padding="10dp"
-        android:layout_margin="10dp"
-        android:text="Hapus"
+        android:text="Tambah"
         android:textStyle="bold"
         android:textSize="17sp"/>
     <TextView
-        android:id="@+id/tv_getemailuser_detailpengeluaran"
-        android:layout_width="wrap_content"
+        android:id="@+id/tv_getemailuser_addjadwal"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:text="userma_mail"
         android:visibility="gone"
-        android:text="getemail"
-        android:textColor="@color/red"
-        />
-
+        android:textColor="@color/black"
+        android:textStyle="italic"/>
 
 </LinearLayout>

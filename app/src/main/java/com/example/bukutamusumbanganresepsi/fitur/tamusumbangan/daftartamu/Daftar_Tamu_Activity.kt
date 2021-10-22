@@ -34,6 +34,7 @@ class Daftar_Tamu_Activity : AppCompatActivity(), Daftar_Tamu_Contract.View {
         Daftar_Tamu_Presnter(this,this)
         loading = showDialogLoading()
         presenter.getTamu()
+        presenter.getJumlahTamu()
 
         btn_addtamu.setOnClickListener {
             startActivity(Intent(this, AddTamuActivity::class.java))
@@ -111,6 +112,10 @@ class Daftar_Tamu_Activity : AppCompatActivity(), Daftar_Tamu_Contract.View {
         }else{
             loading?.dismiss()
         }
+    }
+
+    override fun onSuccessJumlah(jumlah: Int) {
+        tv_jumtam.text = jumlah.toString()
     }
 
     //isi loading

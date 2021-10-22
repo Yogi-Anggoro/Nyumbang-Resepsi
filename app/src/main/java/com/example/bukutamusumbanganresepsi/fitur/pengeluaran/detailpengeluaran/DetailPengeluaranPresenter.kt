@@ -47,7 +47,7 @@ class DetailPengeluaranPresenter(var view: DetailPengeluaranContract.View?) : De
         view?.onProccess(true)
         val ref : DatabaseReference = FirebaseDatabase.getInstance().getReference("Pengeluaran")
         ref.child(idPengeluaran).setValue(pengeluaran).addOnSuccessListener {
-            view?.onSuccess("Success")
+            view?.onSuccess("Data Pengeluaran Berhasil Diubah")
             view?.onProccess(false)
         }.addOnFailureListener {
             view?.onError(it.message!!)
@@ -59,7 +59,7 @@ class DetailPengeluaranPresenter(var view: DetailPengeluaranContract.View?) : De
         view?.onProccess(true)
         val ref : DatabaseReference = FirebaseDatabase.getInstance().getReference("Pengeluaran")
         ref.child(idPengeluaran).removeValue().addOnCompleteListener {
-            view?.onSucessDelete("Success")
+            view?.onSucessDelete("Data Pengeluaran Berhasil Dihapus")
             view?.onProccess(false)
         }.addOnFailureListener {
             view?.onError(it.message!!)

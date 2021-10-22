@@ -23,8 +23,69 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:padding="10dp"
-        android:background="@drawable/bg_rekap1">
+        android:background="@drawable/bg_rekap1"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/bg_rekap1"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Info Umum"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:paddingTop="10dp"
+            android:textColor="@color/black"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Acara        :  "
+                android:textStyle="bold"
+                android:textColor="@color/black"/>
+            <TextView
+                android:id="@+id/tv_acara_rekap"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textColor="@color/black"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Nama        :  "
+                android:textStyle="bold"
+                android:textColor="@color/black"/>
+            <TextView
+                android:id="@+id/tv_nama_rekap"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textColor="@color/black"/>
+        </LinearLayout>
 
         <TextView
             android:layout_width="match_parent"
@@ -40,19 +101,19 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:padding="2dp">
+            >
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Jumlah Tamu Hadir        :  "
+                android:text="Jumlah Tamu Hadir   :  "
                 android:textStyle="bold"
                 android:textColor="@color/black"/>
             <TextView
-                android:id="@+id/tv_jumlah_tamu_r"
+                android:id="@+id/tv_jumlah_tamu_rekap"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="620"
+                android:text="0"
                 android:textStyle="bold"
                 android:textColor="@color/black"/>
         </LinearLayout>
@@ -60,82 +121,23 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:padding="2dp">
+            >
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Jumlah Sumbangan        : Rp "
+                android:text="Jumlah Sumbangan   : Rp "
                 android:textStyle="bold"
                 android:textColor="@color/black"/>
             <TextView
-                android:id="@+id/tv_jumlah_sumbangan_r"
+                android:id="@+id/tv_jumlah_sumbangan_rekap"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="120000000"
+                android:text="0"
                 android:textStyle="bold"
                 android:textColor="@color/black"/>
         </LinearLayout>
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:padding="2dp">
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Rata-Rata Sumbangan   : Rp "
-                android:textStyle="bold"
-                android:textColor="@color/black"/>
-            <TextView
-                android:id="@+id/tv_rata_sumbangan_r"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="100000"
-                android:textStyle="bold"
-                android:textColor="@color/black"/>
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:padding="2dp">
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Sumbangan Terbesar     : Rp "
-                android:textStyle="bold"
-                android:textColor="@color/black"/>
-            <TextView
-                android:id="@+id/tv_sumbangan_terbesar_r"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="500000"
-                android:textStyle="bold"
-                android:textColor="@color/black"/>
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:padding="2dp">
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Sumbangan Terkecil       : Rp "
-                android:textStyle="bold"
-                android:textColor="@color/black"/>
-            <TextView
-                android:id="@+id/tv_sumbangan_terkecil_r"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="25000"
-                android:textStyle="bold"
-                android:textColor="@color/black"/>
-        </LinearLayout>
 
         <TextView
             android:layout_width="match_parent"
@@ -156,19 +158,19 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                android:padding="2dp">
+                >
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Daftar Pengeluaran        :  "
+                    android:text="Daftar Pengeluaran    :  "
                     android:textStyle="bold"
                     android:textColor="@color/black"/>
                 <TextView
-                    android:id="@+id/tv_jumlah_daftar_r"
+                    android:id="@+id/tv_jumlah_daftar_rekap"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="45"
+                    android:text="0"
                     android:textStyle="bold"
                     android:textColor="@color/black"/>
             </LinearLayout>
@@ -181,74 +183,14 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Jumlah Pengeluaran      : Rp "
+                    android:text="Jumlah Pengeluaran  : Rp "
                     android:textStyle="bold"
                     android:textColor="@color/black"/>
                 <TextView
-                    android:id="@+id/tv_jumlah_pengeluaran_r"
+                    android:id="@+id/tv_jumlah_pengeluaran_rekap"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="67000000"
-                    android:textStyle="bold"
-                    android:textColor="@color/black"/>
-            </LinearLayout>
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:padding="2dp">
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Rata-Rata Pengeluaran   : Rp "
-                    android:textStyle="bold"
-                    android:textColor="@color/black"/>
-                <TextView
-                    android:id="@+id/tv_rata_pengeluaran_r"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="4554000"
-                    android:textStyle="bold"
-                    android:textColor="@color/black"/>
-            </LinearLayout>
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:padding="2dp">
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Pengeluaran Terbesar     : Rp "
-                    android:textStyle="bold"
-                    android:textColor="@color/black"/>
-                <TextView
-                    android:id="@+id/tv_pengeluaran_terbesar_r"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="20000000"
-                    android:textStyle="bold"
-                    android:textColor="@color/black"/>
-            </LinearLayout>
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:padding="2dp">
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Pengeluaran Terkecil       : Rp "
-                    android:textStyle="bold"
-                    android:textColor="@color/black"/>
-                <TextView
-                    android:id="@+id/tv_Pengeluaran_terkecil_r"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="25000"
+                    android:text="0"
                     android:textStyle="bold"
                     android:textColor="@color/black"/>
             </LinearLayout>
@@ -273,19 +215,19 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal"
-                    android:padding="2dp">
+                    >
 
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Pendapatan                                : Rp "
+                        android:text="Pendapatan                           : Rp "
                         android:textStyle="bold"
                         android:textColor="@color/black"/>
                     <TextView
-                        android:id="@+id/tv_pendapatan_r"
+                        android:id="@+id/tv_pendapatan_rekap"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="35000000"
+                        android:text="0"
                         android:textStyle="bold"
                         android:textColor="@color/black"/>
                 </LinearLayout>
@@ -293,28 +235,58 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal"
-                    android:padding="2dp">
+                    android:layout_marginBottom="20dp"
+                    >
 
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Sumbangan Dikembalikan      : "
+                        android:text="Sumbangan Dikembalikan  : "
                         android:textStyle="bold"
                         android:textColor="@color/black"/>
                     <TextView
-                        android:id="@+id/tv_sumbkem_r"
+                        android:id="@+id/tv_sumbkem_rekap"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="5"
+                        android:hint="0"
+                        android:textColorHint="@color/black"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text=" dari "
+                        android:textStyle="bold"
+                        android:textColor="@color/black"/>
+                    <TextView
+                        android:id="@+id/tv_jumlah_kembalikan_tamu"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="0"
+                        android:textColorHint="@color/black"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text=" Tamu"
                         android:textStyle="bold"
                         android:textColor="@color/black"/>
                 </LinearLayout>
+
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:orientation="vertical"
-                    android:padding="2dp">
-
+                    android:paddingBottom="5dp"
+                    >
+                    <TextView
+                        android:paddingTop="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Catatan"
+                        android:textStyle="bold|italic"
+                        android:textColor="@color/red"/>
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -328,6 +300,7 @@
                         android:textStyle="italic"
                         android:textColor="@color/red"/>
                 </LinearLayout>
+            </LinearLayout>
 
 
 

@@ -11,7 +11,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Design.NoActionBar">
-        <activity android:name=".fitur.about.AboutActivity"></activity>
+        <activity android:name=".fitur.jadwal.detailjadwal.DetailJadwalActivity"></activity>
+        <activity android:name=".fitur.jadwal.daftarjadwal.DaftarJadwalActivity" />
+        <activity android:name=".fitur.jadwal.addjadwal.AddJadwalActivity" />
+        <activity android:name=".fitur.about.AboutActivity" />
         <activity android:name=".fitur.infoakun.InfoAkunActivity" />
         <activity android:name=".fitur.rekap.RekapDataActivity" />
         <activity android:name=".fitur.kembalikansumbangan.daftarkembalianonly.DaftarKembalianOnlyActivity" />
@@ -31,7 +34,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".fitur.main.MainActivity"></activity>
+        <activity android:name=".fitur.main.MainActivity" />
     </application>
 
 </manifest>

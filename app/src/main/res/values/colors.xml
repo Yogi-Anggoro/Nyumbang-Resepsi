@@ -10,4 +10,5 @@
     <color name="blue">#208AF7</color>
     <color name="mainbg">#e2e7e7</color>
     <color name="red">#DF0833</color>
+    <color name="oppacity">#DDAAAAAA</color>
 </resources>

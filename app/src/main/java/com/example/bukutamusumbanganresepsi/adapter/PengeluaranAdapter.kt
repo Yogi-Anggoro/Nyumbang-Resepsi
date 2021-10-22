@@ -15,7 +15,7 @@ class PengeluaranAdapter(val pengeluaran : ArrayList<Pengeluaran>?, val context:
         fun bind (pengeluaran: Pengeluaran, clickItem: onClickItem){
             view.tv_nomor_pengeluaran.text = pengeluaran.nomor_pengeluaran
             view.tv_tgl_pengeluaran.text = pengeluaran.tanggal_pengeluaran
-            view.tv_jumlahPengeluaran.text = pengeluaran.jumlah_pengeluaran.toString()
+            view.tv_jumlahPengeluaran.text = pengeluaran.jumlah_pengeluaran
             view.tv_nama_pengeluaran.text = pengeluaran.nama_pengeluaran
             view.tv_keteranganpengeluaran.text = pengeluaran.ket_pengeluaran
             view.card_item_pengeluaran.setOnClickListener {

@@ -21,24 +21,25 @@ class DetailTamuActivity : AppCompatActivity(), DetailTamuContract.View{
     var tamu: Tamu? = null
     var nomor : String? = null
     var idTamu : String? = null
-    private val status_sumbangan = "Belum Dikembalikan"
-    private val pengembalian_sumbangan = "-"
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_detail_tamu)
         loading = showDialogLoading()
         nomor = intent.getStringExtra("nomor")
         presenter.getTamu(nomor)
+        presenter.getEmailUser()
 
         btn_update_tamu.setOnClickListener {
             if (handleInput()){
                 val tamu = Tamu(
+                        tv_getemailuser_updatetamu.text.toString(),
                         et_d_nomor_tamu.text.toString(),
                         et_d_nama_tamu.text.toString(),
                         et_d_alamat_tamu.text.toString(),
                         et_d_keterangan_tamu.text.toString(),
                         et_d_jumlah_sumbangan.text.toString(),
-                        status_sumbangan,pengembalian_sumbangan
+                        tv_statussumbangan_detail.text.toString(),
+                        tv_pengembaliansumbangan_detail.text.toString()
 
                 )
                 presenter.updateTamu(idTamu!!, tamu)
@@ -60,6 +61,8 @@ class DetailTamuActivity : AppCompatActivity(), DetailTamuContract.View{
         et_d_alamat_tamu.setText(tamu?.alamat)
         et_d_keterangan_tamu.setText(tamu?.ket)
         et_d_jumlah_sumbangan.setText(tamu?.jumlah_sumbangan)
+        tv_statussumbangan_detail.setText(tamu?.Status_sumbangan)
+        tv_pengembaliansumbangan_detail.setText(tamu?.pengembalian)
     }
 
     override fun onSucessDelete(message: String) {
@@ -69,6 +72,7 @@ class DetailTamuActivity : AppCompatActivity(), DetailTamuContract.View{
 
     override fun onSuccess(message: String) {
         Toast.makeText(this,message, Toast.LENGTH_SHORT).show()
+        finish()
     }
 
     override fun onProcess(boolean: Boolean) {
@@ -77,6 +81,10 @@ class DetailTamuActivity : AppCompatActivity(), DetailTamuContract.View{
         }else{
             loading?.dismiss()
         }
+    }
+
+    override fun onSucessMail(email: String) {
+        tv_getemailuser_updatetamu.text = email
     }
 
     //loading

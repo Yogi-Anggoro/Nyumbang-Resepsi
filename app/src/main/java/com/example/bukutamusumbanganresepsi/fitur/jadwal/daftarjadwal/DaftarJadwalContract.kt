@@ -1,22 +1,20 @@
-package com.example.bukutamusumbanganresepsi.fitur.pengeluaran.daftarpengeluaran
+package com.example.bukutamusumbanganresepsi.fitur.jadwal.daftarjadwal
 
 import com.example.bukutamusumbanganresepsi.base.BasePresenter
 import com.example.bukutamusumbanganresepsi.base.BaseView
-import com.example.bukutamusumbanganresepsi.model.Pengeluaran
+import com.example.bukutamusumbanganresepsi.model.Jadwal
 
-interface Daftar_Pengeluaran_Contract {
+interface DaftarJadwalContract {
 
     interface View : BaseView<Presenter>{
         fun onError (message: String)
         fun onProccess (boolean: Boolean)
-        fun onSuccess (pengeluaran: ArrayList<Pengeluaran>?)
+        fun onSuccess (jadwal : ArrayList<Jadwal>)
         fun onSuccessJumlah (jumlah: Int)
-        fun onSuccessJumlahPengeluaran (jumlahs: Int)
     }
 
     interface Presenter : BasePresenter{
-        fun getPengeluaran ()
+        fun getJadwal()
         fun getJumlah()
-        fun getJumlahPengeluaran()
     }
 }

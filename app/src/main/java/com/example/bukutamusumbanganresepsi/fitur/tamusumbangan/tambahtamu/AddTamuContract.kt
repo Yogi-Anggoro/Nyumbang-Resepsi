@@ -9,8 +9,10 @@ interface AddTamuContract {
         fun onError(message: String)
         fun onSuccess(message: String)
         fun onProcess(boolean: Boolean)
+        fun onSuccessMail(email: String)
     }
     interface presenter : BasePresenter{
         fun addTamu(tamu: Tamu)
+        fun getUsermail()
     }
 }

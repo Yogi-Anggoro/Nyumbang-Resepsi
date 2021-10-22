@@ -9,6 +9,8 @@ import androidx.appcompat.app.AlertDialog
 import com.example.bukutamusumbanganresepsi.R
 import com.example.bukutamusumbanganresepsi.fitur.about.AboutActivity
 import com.example.bukutamusumbanganresepsi.fitur.infoakun.InfoAkunActivity
+import com.example.bukutamusumbanganresepsi.fitur.jadwal.addjadwal.AddJadwalActivity
+import com.example.bukutamusumbanganresepsi.fitur.jadwal.daftarjadwal.DaftarJadwalActivity
 import com.example.bukutamusumbanganresepsi.fitur.kembalikansumbangan.daftarkembalikansumbangan.DaftarKembalikanSumbanganActivity
 import com.example.bukutamusumbanganresepsi.fitur.login.LoginActivity
 import com.example.bukutamusumbanganresepsi.fitur.pengeluaran.daftarpengeluaran.Daftar_Pengeluaran_Activity
@@ -51,7 +53,7 @@ class MainActivity : AppCompatActivity(),MainContract.View {
             startActivity(intent)
         }
         crd_jadwal_nyumbang.setOnClickListener {
-            val intent = Intent(this,DaftarKembalikanSumbanganActivity::class.java)
+            val intent = Intent(this,DaftarJadwalActivity::class.java)
             startActivity(intent)
         }
         crd_pengeluaran.setOnClickListener {

@@ -47,7 +47,7 @@ class DetailKembalikanSumbanganPresenter(var view : DetailKembalikanSumbanganCon
         view?.onProcess(true)
         val ref: DatabaseReference = FirebaseDatabase.getInstance().getReference("Tamu")
         ref.child(idTamu).setValue(tamu).addOnCompleteListener {
-            view?.onSuccess("Success")
+            view?.onSuccess("Sumbangan Telah Dikembalikan")
             view?.onProcess(false)
         }.addOnFailureListener {
             view?.onError(it.message!!)

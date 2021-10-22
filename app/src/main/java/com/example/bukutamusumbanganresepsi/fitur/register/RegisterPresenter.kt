@@ -21,7 +21,7 @@ class RegisterPresenter(val context: Context, var view : RegisterContract.view?)
         firebaseAuth.createUserWithEmailAndPassword(user.email,user.password).addOnCompleteListener { it ->
             if (it.isSuccessful){
                 ref.push().setValue(user).addOnCompleteListener {
-                    view?.onSuccess("Sucess")
+                    view?.onSuccess("Register Berhasil")
                 }.addOnFailureListener {
                     view?.onError(it.message!!)
                 }

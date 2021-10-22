@@ -14,7 +14,7 @@ class AddPengeluaranPresenter (var view : AddPengeluaranContract.View?) : AddPen
         view?.onProccess(true)
         val ref : DatabaseReference = FirebaseDatabase.getInstance().getReference("Pengeluaran")
         ref.push().setValue(pengeluaran).addOnCompleteListener {
-            view?.onSuccess("Success")
+            view?.onSuccess("Data Pengeluaran Telah Ditambahkan")
             view?.onProccess(false)
         }.addOnFailureListener {
             view?.onError(it.message!!)
@@ -26,20 +26,12 @@ class AddPengeluaranPresenter (var view : AddPengeluaranContract.View?) : AddPen
         view?.onProccess(true)
         val ref: DatabaseReference = FirebaseDatabase.getInstance().getReference("User")
         val currentUser : FirebaseUser = FirebaseAuth.getInstance().currentUser!!
-        ref.addValueEventListener(object: ValueEventListener {
+        ref.orderByChild("email").equalTo(currentUser.email).addValueEventListener(object: ValueEventListener {
             override fun onDataChange(snapshot: DataSnapshot) {
                 for (dataSnap in snapshot.children){
-                    var users : ArrayList<User>? = null
-                    for (dataSnap in snapshot.children){
-                        val user = dataSnap.getValue(User::class.java)
-                        users?.add(user!!)
-                        if (currentUser.email.equals(user?.email)){
                             val email = dataSnap.child("email").getValue()
                             view?.onSuccessMail(email as String)
                             view?.onProccess(false)
-                        }
-                    }
-
                 }
             }
 

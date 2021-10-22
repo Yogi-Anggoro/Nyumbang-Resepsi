@@ -11,10 +11,12 @@ interface DetailTamuContract {
         fun onSucessDelete(message: String)
         fun onSuccess(message: String)
         fun onProcess(boolean: Boolean)
+        fun onSucessMail(email: String)
     }
     interface Presenter : BasePresenter{
         fun getTamu(nomorTamu: String?)
         fun updateTamu(idTamu: String, tamu: Tamu)
         fun deleteTamu(idTamu: String)
+        fun getEmailUser()
     }
 }

@@ -14,7 +14,7 @@ class LoginPresenter(val context: Context, var view: LoginContract.View?) : Logi
         val firebaseAuth : FirebaseAuth = Firebase.auth
         firebaseAuth.signInWithEmailAndPassword(email, pass).addOnCompleteListener {
             if (it.isSuccessful){
-                view?.onSucess("Success")
+                view?.onSucess("Login Berhasil")
             } else{
                 view?.onError(it.exception?.message!!)
             }

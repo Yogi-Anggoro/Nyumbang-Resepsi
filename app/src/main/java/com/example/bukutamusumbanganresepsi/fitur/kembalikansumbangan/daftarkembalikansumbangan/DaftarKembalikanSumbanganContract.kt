@@ -9,8 +9,10 @@ interface DaftarKembalikanSumbanganContract {
         fun onErorr(message: String)
         fun onProccess(boolean: Boolean)
         fun onSuccess(tamu: ArrayList<Tamu>)
+        fun onSuccessJumlah(jumlah: Int)
     }
     interface Presenter: BasePresenter{
         fun getTamu ()
+        fun getJumlah()
     }
 }
